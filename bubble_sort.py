@@ -1,5 +1,3 @@
-# coding: UTF-8
-
 import random
 
 # list size
@@ -12,7 +10,6 @@ print(list)
 def swap(some_list, i, j):
     some_list[i], some_list[j] = some_list[j], some_list[i]
 
-# sort
 i = N
 while i >= 2:
     j = 1
