@@ -15,10 +15,7 @@ if a * b == 0:
 else:
     a, b = max(a, b), min(a, b)
     r = a - a // b
-
-    while r != 0:
-        r = a % b
-        a = b
-        b = r
+    while r != 0: 
+        r, a, b = a % b, b, r
 
 print("gcd({}, {}) = {}".format(a_0, b_0, a))
