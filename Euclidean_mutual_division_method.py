@@ -12,6 +12,8 @@ math.gcd(a, b)
 
 if a * b == 0:
     a = 0
+elif min(a, b) == 1:
+    a = 1
 else:
     a, b = max(a, b), min(a, b)
     r = a - a // b
