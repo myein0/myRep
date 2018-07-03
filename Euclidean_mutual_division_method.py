@@ -16,10 +16,8 @@ if a * b == 0:
 elif a % b == 0:
     gcd = b
 else:
-    r = a % b
-    while r != 0: 
-        r = a % b
-        a, b = b, r
+    while b != 0: 
+        a, b = b, a % b
     gcd = a
 
 print("gcd({}, {}) = {}".format(a_0, b_0, gcd))
