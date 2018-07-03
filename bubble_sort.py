@@ -1,8 +1,8 @@
 import random
 
 # list size
-#N = random.randint(1, 100)
-N = 10
+N = random.randint(1, 100)
+# N = 10
 
 list = [random.randint(1, N) for i in range(N)]
 print(list)
